@@ -1,0 +1,90 @@
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  background-color: #333333;
+  color: #eeeeee;
+  max-width: 600px;
+}
+
+#title {
+  margin: 0 auto  1rem;
+  font-size: 5rem;
+  font-weight: bold;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 400px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(4, 1fr) auto;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.helper-info {
+  margin: 0 auto;
+  text-align: left;
+  font-size: 2rem;
+  grid-column-end: span 3;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.helper-minus, .helper-plus {
+  display: inline;
+  grid-column-end: span 1;
+  font-size: 4rem;
+  cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+#helper-value-one, #helper-value-two {
+  width: min(6rem, 80%);
+  margin: 0 auto;
+  grid-column-end: span 1;
+  color: #333333;
+  font-size: 3rem;
+  background-color: #eeeeee;
+  border-radius: 1.5rem;
+  padding: 0.25rem 0;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+main > button {
+  margin: 2rem auto;
+  color: #88dd88;
+  font-size: 3.5rem;
+  background-color: #555555;
+  border: solid 0.15rem #ffffff;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0.05rem 0.15rem 0.05rem #999999;
+  grid-column-end: span 3;
+  padding: 0.25rem 1rem;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  transition: all ease 0.5s;
+}
+
+.btn-stop {
+  color: #dd8888;
+}
