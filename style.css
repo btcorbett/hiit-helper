@@ -3,6 +3,7 @@ body {
   box-sizing: border-box;
   text-align: center;
   font-family: 'Patrick Hand', cursive;
+  font-size: 14px;
   background-color: #333333;
   color: #eeeeee;
   max-width: 600px;
