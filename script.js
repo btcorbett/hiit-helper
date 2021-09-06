@@ -8,6 +8,9 @@ let countdownLimit;
 document.addEventListener('click', function(e) {
     actionClick(e);
 });
+document.addEventListener('touchend', function(e) {
+    actionClick(e);
+});
 
 function actionClick(e) {
   let clickedElement = e.path[0];
