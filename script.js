@@ -5,11 +5,12 @@ let beep_interval  = new Audio('beep_interval.wav');
 let beep_countdown  = new Audio('beep_countdown.wav');
 let countdownLimit;
 
-document.addEventListener('click', function(e) {
-    actionClick(e);
-});
 document.addEventListener('touchstart', function(e) {
-    actionClick(e);
+  preventDefault()
+  actionClick(e);
+});
+document.addEventListener('click', function(e) {
+  actionClick(e);
 });
 
 function actionClick(e) {
