@@ -6,9 +6,9 @@ let beep_countdown  = new Audio('beep_countdown.wav');
 let countdownLimit;
 
 document.addEventListener('touchstart', function(e) {
-  preventDefault()
+  e.preventDefault();
   actionClick(e);
-});
+}, {passive: false});
 document.addEventListener('click', function(e) {
   actionClick(e);
 });
