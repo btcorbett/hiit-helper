@@ -8,7 +8,7 @@ let countdownLimit;
 document.addEventListener('click', function(e) {
     actionClick(e);
 });
-document.addEventListener('touchend', function(e) {
+document.addEventListener('touchstart', function(e) {
     actionClick(e);
 });
 
