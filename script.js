@@ -1,7 +1,7 @@
 const helperBtn = document.querySelector('[name="helper-btn"]');
 const plusInterval = document.querySelector('#helper-value-one').nextElementSibling;
 const minusInterval = document.querySelector('#helper-value-one').previousElementSibling;
-const plusCountdown = document.querySelector('#helper-value-twp').nextElementSibling;
+const plusCountdown = document.querySelector('#helper-value-two').nextElementSibling;
 const minusCountdown = document.querySelector('#helper-value-two').previousElementSibling;
 var helperInterval, intervalCounter, beep_interval, beep_countdown;
 intervalCounter = 0;
