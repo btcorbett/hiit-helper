@@ -1,20 +1,25 @@
 const helperBtn = document.querySelector('[name="helper-btn"]');
+const plusInterval = document.querySelector('#helper-value-one').nextElementSibling;
+const minusInterval = document.querySelector('#helper-value-one').previousElementSibling;
 var helperInterval, intervalCounter;
 intervalCounter = 0;
 let beep_interval  = new Audio('beep_interval.wav');
 let beep_countdown  = new Audio('beep_countdown.wav');
 let countdownLimit;
 
-document.addEventListener('touchstart', function(e) {
+plusInterval.addEventListener('touchend', function(e) {
   e.preventDefault();
-  actionClick(e);
+  actionClick(plusInterval);
+}, {passive: false});
+minusInterval.addEventListener('touchend', function(e) {
+  e.preventDefault();
+  actionClick(minusInterval);
 }, {passive: false});
 document.addEventListener('click', function(e) {
-  actionClick(e);
+  actionClick(e.path[0]);
 });
 
-function actionClick(e) {
-  let clickedElement = e.path[0];
+function actionClick(clickedElement) {
   if (clickedElement.classList.contains('helper-minus')) {
     let changeElement = clickedElement.nextElementSibling;
     changeTo = parseInt(changeElement.innerHTML) - 1;
