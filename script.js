@@ -48,7 +48,6 @@ helperBtn.addEventListener('click', function() {
   if (helperBtn.innerHTML == "Go") {
     let oneValue = parseInt(document.querySelector('#helper-value-one').innerHTML);
     let twoValue = parseInt(document.querySelector('#helper-value-two').innerHTML);
-    debugger;
     if (beep_interval === undefined) {
       beep_interval  = new Audio('beep_interval.wav');
     };
