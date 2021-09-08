@@ -3,9 +3,8 @@ const plusInterval = document.querySelector('#helper-value-one').nextElementSibl
 const minusInterval = document.querySelector('#helper-value-one').previousElementSibling;
 const plusCountdown = document.querySelector('#helper-value-two').nextElementSibling;
 const minusCountdown = document.querySelector('#helper-value-two').previousElementSibling;
-var helperInterval, intervalCounter, beep_interval, beep_countdown;
+var helperInterval, intervalCounter, beep_interval, beep_countdown, countdownLimit;
 intervalCounter = 0;
-let countdownLimit;
 
 plusInterval.addEventListener('touchend', function(e) {
   e.preventDefault();
