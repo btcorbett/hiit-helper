@@ -58,12 +58,12 @@ helperBtn.addEventListener('click', function() {
       helperBtn.innerHTML = "Stop";
       helperBtn.classList.add("btn-stop");
 
-      helperInterval = setInterval(function() {
+      helperInterval = setInterval(async function() {
         // Run code to create interval beeps.
         if ((intervalCounter % oneValue) == 0) {
-          playInterval();
+          await playInterval();
         } else if (intervalCounter >= countdownLimit) {
-          playCountdown();
+          await playCountdown();
         };
         intervalCounter += 1;
         countdownLimit = (Math.ceil(intervalCounter / oneValue) * oneValue) - twoValue;
