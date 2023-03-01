@@ -23,7 +23,7 @@ minusCountdown.addEventListener('touchend', function(e) {
   actionClick(minusCountdown);
 }, {passive: false});
 document.addEventListener('click', function(e) {
-  actionClick(e.path[0]);
+  actionClick(e.target);
 });
 
 function actionClick(clickedElement) {
